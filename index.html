@@ -10,7 +10,7 @@
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -59,12 +59,12 @@
       <nav id="sub-nav">
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
       </div>
     </div>
   </div>
@@ -72,6 +72,85 @@
 
       <div class="outer">
         <section id="main">
+  
+    <article id="post-March-23-2024" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/03/23/March-23-2024/" class="article-date">
+  <time class="dt-published" datetime="2024-03-23T08:46:34.000Z" itemprop="datePublished">2024-03-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/03/23/March-23-2024/">March 23, 2024</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="我的第一篇博客">我的第一篇博客</h1>
+<p>今天开始博客之旅，没想好写什么，就回顾一下怎么搭建博客吧<span
+class="math inline">\(\sim\)</span>​</p>
+<h2 id="零前言">零、前言</h2>
+<p>程序员计数从0开始，很合理。</p>
+<p>本人目前是个大三计算机专业的菜鸟，尽管课内已经快实现一周五休的休闲生活，却还得面临考研、实习的诸多压力，又闲又累。在无所事事快一个月后，本着找点事做的想法，又考虑到找实习时可以加分，心血来潮想要搭建一个个人博客。</p>
+<p>在上网搜索教程后，决定基于<code>Hexo</code>搭建个人博客。选择的原因再简单不过，有教程，易上手，经过一番捣鼓，也是成功搭建。因此，为了纪念搭建成功，也是记录下搭建的过程，写了这篇博客QAQ。</p>
+<p>我是在<code>Windows</code>下搭建的，所以以下也是在<code>Windows</code>系统上搭建的方法。其他系统就等我深入学习后再更新吧。</p>
+<p>博客新手，写的不好，还请海涵<span
+class="math inline">\(\sim\)</span>​</p>
+<p>不定期更新</p>
+<h2 id="一安装git">一、安装git</h2>
+<p>把本地文件传到<code>github</code>上的强大工具，官网下载即可</p>
+<p>下载完成后，右键<span
+class="math inline">\(\to\)</span><code>git bash</code>，即可在当前文件夹打开命令行敲命令了</p>
+<h2 id="二安装nodejs">二、安装nodejs</h2>
+<p><code>Hexo</code>是基于<code>node.js</code>编写的，所以我们还需要安装下<code>nodejs</code></p>
+<p><code>windows</code>直接去官网下载就好，<a
+target="_blank" rel="noopener" href="https://nodejs.cn/download/">Node.js</a>，安装一路<code>Next</code>即可</p>
+<p>安装后可以在命令行输入<code>node -v</code>和<code>npm -v</code>命令，如果出现版本号，就说明安装成功</p>
+<h2 id="三安装hexo">三、安装Hexo</h2>
+<p>首先我们可以先建好一个新文件夹，用来存放博客和相关文件，文件夹的位置没有要求，能找到就行</p>
+<p>比如我就放在<code>C:\Users\10605\MyBlog</code></p>
+<p>创建好后，右键文件夹，<code>git bash here</code>，打开命令行控制台</p>
+<p>输入<code>npm install -g hexo-cli</code>安装<code>Hexo</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，可以输入<code>hexo -v</code>验证是否安装成功</p>
+<p>接下来，初始化<code>hexo</code></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>再输入<code>npm install</code>安装必备组件</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>完成后，文件夹目录下应该有：</p>
+<ul>
+<li><code>node_modules</code> 依赖包</li>
+<li><code>public</code> 存放生成的页面</li>
+<li><code>scaffolds</code> 生成文章的一些模板</li>
+<li><code>source</code> 用来存放文章</li>
+<li><code>themes</code> 主题</li>
+<li><code>_config.yml</code> 博客的配置文件</li>
+</ul>
+<p>此时本地的网站配置就弄好了，输入<code>hexo g</code>生成静态网页，输入<code>hexo s</code>打开本地服务器查看</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/03/23/March-23-2024/" data-id="clu58zhq400006cj3gulg44sh" data-title="March 23, 2024" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -95,24 +174,34 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very
+first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for
+more info. If you get any problems when using Hexo, you can find the
+answer in <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
+you can ask me on <a
+target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a
+target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/23/hello-world/" data-id="clu3ucs440000ecj3fck09v53" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/03/23/hello-world/" data-id="clu58zhq900016cj335a103a2" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -140,9 +229,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">三月 2024</a></li></ul>
     </div>
   </div>
 
@@ -150,9 +239,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/03/23/March-23-2024/">March 23, 2024</a>
+          </li>
         
           <li>
             <a href="/2024/03/23/hello-world/">Hello World</a>
